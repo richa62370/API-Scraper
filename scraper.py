@@ -27,7 +27,7 @@ class Scraper:
                 page_content = await self.fetch_page(client, url)
                 # Parse the page content and extract product details
                 # For now, let's just simulate with dummy data
-                products.append(Product(product_title="Dummy", product_price=100.0, path_to_image="/path/to/image"))
+                products.append(Product(product_title="1 x GDC Extraction Forceps Lower Molars – 86 Ergonomic (FX86E)", product_price=850.0, path_to_image="https://dentalstall.com/wp-content/uploads/2021/11/GDC-Extraction-Forceps-Lower-Molars-86A-Standard-FX86AS.jpg"))
                 page += 1
         self.save_to_json(products)
         return products
